@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RosterGroupHeaderWidget</class>
+ <widget class="QWidget" name="RosterGroupHeaderWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>30</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>30</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>30</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel {
+    background: transparent;
+}
+
+RosterGroupHeaderWidget:hover {
+    background-color: rgb(255,200,255);
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>4</number>
+   </property>
+   <property name="leftMargin">
+    <number>4</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item alignment="Qt::AlignVCenter">
+    <widget class="QLabel" name="arrowLabel">
+     <property name="minimumSize">
+      <size>
+       <width>9</width>
+       <height>9</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>9</width>
+       <height>9</height>
+      </size>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="redhare.qrc">:/res/arrow_right.png</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignVCenter">
+    <widget class="QLabel" name="titleLabel">
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background: transparent;
+}
+
+RosterGroupHeaderWidget:hover {
+    background-color: rgb(255,200,255);
+}</string>
+     </property>
+     <property name="text">
+      <string>NAME</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="redhare.qrc"/>
+ </resources>
+ <connections/>
+</ui>

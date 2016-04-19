@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/redhare.ico</file>
+        <file>res/button_minimize_hover.png</file>
+        <file>res/button_close.png</file>
+        <file>res/button_close_hover.png</file>
+        <file>res/button_minimize.png</file>
+        <file>res/checkbox_unchecked.png</file>
+        <file>res/checkbox_checked.png</file>
+        <file>res/button_settings.png</file>
+        <file>res/button_settings_hover.png</file>
+        <file>res/arrow_down.png</file>
+        <file>res/arrow_right.png</file>
+        <file>res/scrollbar.qss</file>
+        <file>res/scrollbar_hover.qss</file>
+        <file>res/button_restore.png</file>
+        <file>res/button_restore_hover.png</file>
+        <file>res/button_maximize.png</file>
+        <file>res/button_maximize_hover.png</file>
+    </qresource>
+</RCC>
