@@ -2,17 +2,17 @@
 
 /**
  * @class RosterEntry
- * @brief RosterEntryÀà±íÊ¾Ò»¸öÁªÏµÈË£¬±£´æÓĞÁªÏµÈËµÄuid¡¢ĞÕÃûµÈÊı¾İ¡£
+ * @brief RosterEntryç±»è¡¨ç¤ºä¸€ä¸ªè”ç³»äººï¼Œä¿å­˜æœ‰è”ç³»äººçš„uidã€å§“åç­‰æ•°æ®ã€‚
  *
- * RosterEntryÓÃÓÚ±íÊ¾ÓÃ»§µÄÒ»¸öÁªÏµÈË£¬ÁªÏµÈËµÄËùÓĞÊı¾İ£¨uid¡¢ĞÕÃûµÈ£©¶¼±£´æÔÚ
- * RosterEntryµÄÊµÀıÖĞ¡£ÔÚĞŞ¸ÄÁªÏµÈËÊı¾İÊ±£¬RosterEntryµÄÊµÀı»áemitÏìÓ¦µÄĞÅºÅ¡£
- * Í¨³£À´Ëµ£¬RosterEntryµÄÊµÀıÓ¦µ±Í¨¹ınewÔËËã·û¹¹Ôì£¬
- * ²¢µ÷ÓÃRosterManager::instance()->addEntry(entry)Ìí¼Óµ½ËùÓĞÁªÏµÈËÖĞ¡£
+ * RosterEntryç”¨äºè¡¨ç¤ºç”¨æˆ·çš„ä¸€ä¸ªè”ç³»äººï¼Œè”ç³»äººçš„æ‰€æœ‰æ•°æ®ï¼ˆuidã€å§“åç­‰ï¼‰éƒ½ä¿å­˜åœ¨
+ * RosterEntryçš„å®ä¾‹ä¸­ã€‚åœ¨ä¿®æ”¹è”ç³»äººæ•°æ®æ—¶ï¼ŒRosterEntryçš„å®ä¾‹ä¼šemitå“åº”çš„ä¿¡å·ã€‚
+ * é€šå¸¸æ¥è¯´ï¼ŒRosterEntryçš„å®ä¾‹åº”å½“é€šè¿‡newè¿ç®—ç¬¦æ„é€ ï¼Œ
+ * å¹¶è°ƒç”¨RosterManager::instance()->addEntry(entry)æ·»åŠ åˆ°æ‰€æœ‰è”ç³»äººä¸­ã€‚
 **/
 
 /**
  * @fn RosterEntry::RosterEntry(quint64 uid);
- * @brief ¹¹ÔìÒ»¸öĞÂµÄÁªÏµÈË£¬²¢Ö¸¶¨Æäuid¡£ÆäËûÊı¾İÈ¡Ä¬ÈÏÖµ¡£
+ * @brief æ„é€ ä¸€ä¸ªæ–°çš„è”ç³»äººï¼Œå¹¶æŒ‡å®šå…¶uidã€‚å…¶ä»–æ•°æ®å–é»˜è®¤å€¼ã€‚
 **/
 
 void RosterEntry::setName(const QString &name)

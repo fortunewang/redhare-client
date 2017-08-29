@@ -3,10 +3,10 @@
 
 /**
  * @class RosterManager
- * @brief RosterManagerÀàÓÃÓÚ¹ÜÀíËùÓĞµÄÁªÏµÈË¡£
+ * @brief RosterManagerç±»ç”¨äºç®¡ç†æ‰€æœ‰çš„è”ç³»äººã€‚
  *
- * RosterManagerÊÇµ¥ÀıÀà¡£ÆäÎ¨Ò»ÊµÀıÍ¨¹ı¾²Ì¬º¯ÊıRosterManager::instance()»ñµÃ¡£
- * RosterManagerÒÔuidÎªË÷Òı£¬¹ÜÀíÓÃ»§ËùÓĞµÄÁªÏµÈË¡£
+ * RosterManageræ˜¯å•ä¾‹ç±»ã€‚å…¶å”¯ä¸€å®ä¾‹é€šè¿‡é™æ€å‡½æ•°RosterManager::instance()è·å¾—ã€‚
+ * RosterManagerä»¥uidä¸ºç´¢å¼•ï¼Œç®¡ç†ç”¨æˆ·æ‰€æœ‰çš„è”ç³»äººã€‚
 **/
 
 RosterManager* RosterManager::instance()

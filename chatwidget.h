@@ -31,13 +31,13 @@ private:
     Ui::ChatWidget *ui;
     RosterEntry *info_;
 
-    int tracking_type_;     // Ö¸Ê¾Êó±ê°´ÏÂµÄ²Ù×÷(ÎŞ¡¢ÒÆ¶¯´°Ìå¡¢±à¼­²¼¾Ö¡¢¸Ä±ä´óĞ¡)
-    QPoint tracking_point_; // ÒÆ¶¯´°ÌåÊ±£¬ÊÇÊó±êµÄ³õÊ¼globalPosÏà¶Ô´°¿Ú×óÉÏ½ÇµÄÆ«ÒÆ
-                            // ±à¼­²¼¾ÖÊ±£¬ÊÇÊó±êµÄ³õÊ¼globalPos
-    int tracking_height_;   // ±à¼­²¼¾ÖÊ±£¬ÊÇinputEdit³õÊ¼µÄ¸ß¶È
-    int tracking_hittest_;  // mouseMoveEventÖĞ¸üĞÂµÄÖ¸ÕëÂäµãÅĞ¶Ï
-                            // Ó°Ïìtracking_type_µÄÅĞ¶ÏÒÔ¼°¸Ä±ä´óĞ¡Ê±µÄĞĞÎª
-    QRect tracking_rect_;   // resizeEventÖĞ¸üĞÂµÄ±à¼­²¼¾ÖÅĞ¶¨Çø
+    int tracking_type_;     // æŒ‡ç¤ºé¼ æ ‡æŒ‰ä¸‹çš„æ“ä½œ(æ— ã€ç§»åŠ¨çª—ä½“ã€ç¼–è¾‘å¸ƒå±€ã€æ”¹å˜å¤§å°)
+    QPoint tracking_point_; // ç§»åŠ¨çª—ä½“æ—¶ï¼Œæ˜¯é¼ æ ‡çš„åˆå§‹globalPosç›¸å¯¹çª—å£å·¦ä¸Šè§’çš„åç§»
+                            // ç¼–è¾‘å¸ƒå±€æ—¶ï¼Œæ˜¯é¼ æ ‡çš„åˆå§‹globalPos
+    int tracking_height_;   // ç¼–è¾‘å¸ƒå±€æ—¶ï¼Œæ˜¯inputEditåˆå§‹çš„é«˜åº¦
+    int tracking_hittest_;  // mouseMoveEventä¸­æ›´æ–°çš„æŒ‡é’ˆè½ç‚¹åˆ¤æ–­
+                            // å½±å“tracking_type_çš„åˆ¤æ–­ä»¥åŠæ”¹å˜å¤§å°æ—¶çš„è¡Œä¸º
+    QRect tracking_rect_;   // resizeEventä¸­æ›´æ–°çš„ç¼–è¾‘å¸ƒå±€åˆ¤å®šåŒº
 
     static QHash<quint64, ChatWidget*> windows_;
 private slots:

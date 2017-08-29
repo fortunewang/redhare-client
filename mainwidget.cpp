@@ -36,7 +36,7 @@ MainWidget::MainWidget(QWidget *parent)
     this->setWindowFlags(Qt::Tool | Qt::FramelessWindowHint);
 
     QMenu *main_menu = new QMenu(this);
-    main_menu->addAction(QStringLiteral("ÉèÖÃ"));
+    main_menu->addAction(QStringLiteral("è®¾ç½®"));
     ui->settingsButton->setMenu(main_menu);
 
     RHScrollBar::hook(ui->scrollArea);
@@ -234,7 +234,7 @@ void MainWidget::leaveEvent(QEvent*)
 
 void MainWidget::closeEvent(QCloseEvent *event)
 {
-    if(!QuestionDialog::question(this, QStringLiteral("È·¶¨ÒªÍË³öÂð£¿")))
+    if(!QuestionDialog::question(this, QStringLiteral("ç¡®å®šè¦é€€å‡ºå—ï¼Ÿ")))
     {
         event->ignore();
     }

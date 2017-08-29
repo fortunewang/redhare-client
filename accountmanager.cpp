@@ -17,11 +17,11 @@ void AccountManager::startLogin()
     QMenu *menu = new QMenu(this);
     QAction *action;
 
-    action = menu->addAction(QStringLiteral("´ò¿ªÖ÷Ãæ°å"));
+    action = menu->addAction(QStringLiteral("æ‰“å¼€ä¸»é¢æ¿"));
     QObject::connect(action, SIGNAL(triggered()),
         this, SIGNAL(sigTrayMenuActivate()));
 
-    action = menu->addAction(QStringLiteral("ÍË³ö"));
+    action = menu->addAction(QStringLiteral("é€€å‡º"));
     QObject::connect(action, SIGNAL(triggered()),
         this, SIGNAL(sigTrayMenuExit()));
 
@@ -52,11 +52,11 @@ void AccountManager::onLoginSucceeded()
     QMenu *menu = new QMenu(this);
     QAction *action;
 
-    action = menu->addAction(QStringLiteral("´ò¿ªÖ÷Ãæ°å"));
+    action = menu->addAction(QStringLiteral("æ‰“å¼€ä¸»é¢æ¿"));
     QObject::connect(action, SIGNAL(triggered()),
         this, SIGNAL(sigTrayMenuActivate()));
 
-    action = menu->addAction(QStringLiteral("ÍË³ö"));
+    action = menu->addAction(QStringLiteral("é€€å‡º"));
     QObject::connect(action, SIGNAL(triggered()),
         this, SIGNAL(sigTrayMenuExit()));
 

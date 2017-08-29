@@ -7,76 +7,76 @@
 
 void rh_localtest_roster()
 {
-    RosterManager::instance()->addGroup(QStringLiteral("ÎÒµÄºÃÓÑ"));
-    RosterManager::instance()->addGroup(QStringLiteral("´óÑ§Í¬Ñ§"));
+    RosterManager::instance()->addGroup(QStringLiteral("æˆ‘çš„å¥½å‹"));
+    RosterManager::instance()->addGroup(QStringLiteral("å¤§å­¦åŒå­¦"));
 
     RosterEntry *entry = new RosterEntry(1);
-    entry->setGroup(QStringLiteral("ÎÒµÄºÃÓÑ"));
-    entry->setName(QStringLiteral("¿¨¶ûÎ¬Åµ"));
-    entry->setIntro(QStringLiteral("ÏëÒªÇå³ş¿´¼ûµØÉÏµÄÈË£¬¾ÍÓ¦¸ÃºÍµØÃæ±£³Ö±ØÒªµÄ¾àÀë¡£"));
+    entry->setGroup(QStringLiteral("æˆ‘çš„å¥½å‹"));
+    entry->setName(QStringLiteral("å¡å°”ç»´è¯º"));
+    entry->setIntro(QStringLiteral("æƒ³è¦æ¸…æ¥šçœ‹è§åœ°ä¸Šçš„äººï¼Œå°±åº”è¯¥å’Œåœ°é¢ä¿æŒå¿…è¦çš„è·ç¦»ã€‚"));
     entry->setPhoto(QStringLiteral("adobeflashplugin.png"));
     RosterManager::instance()->addEntry(entry);
 
     entry = new RosterEntry(2);
-    entry->setGroup(QStringLiteral("ÎÒµÄºÃÓÑ"));
-    entry->setName(QStringLiteral("¿Â°¬ÂÔ"));
-    entry->setIntro(QStringLiteral("ºÜÆæ¹Ö£¬ÎÒÃÇ²»Ğ¼ÓëËûÈËÎªÎé£¬È´º¦ÅÂ×Ô¼ºÓëÖÚ²»Í¬¡£"));
+    entry->setGroup(QStringLiteral("æˆ‘çš„å¥½å‹"));
+    entry->setName(QStringLiteral("æŸ¯è‰¾ç•¥"));
+    entry->setIntro(QStringLiteral("å¾ˆå¥‡æ€ªï¼Œæˆ‘ä»¬ä¸å±‘ä¸ä»–äººä¸ºä¼ï¼Œå´å®³æ€•è‡ªå·±ä¸ä¼—ä¸åŒã€‚"));
     entry->setPhoto(QStringLiteral("akregator.png"));
     RosterManager::instance()->addEntry(entry);
 
     entry = new RosterEntry(3);
-    entry->setGroup(QStringLiteral("´óÑ§Í¬Ñ§"));
-    entry->setName(QStringLiteral("¸£¿ËÄÉ"));
-    entry->setIntro(QStringLiteral("Ê«ÈËµÄÉùÒô²»Ó¦¸Ã½ö½ö³ÉÎªÈËÀàÀúÊ·µÄ¼ÇÂ¼£¬¸üÓ¦¸Ã³ÉÎªÈËÀà´æÔÚÓëÊ¤ÀûµÄÖ§ÖùºÍ¶°Áº¡£"));
+    entry->setGroup(QStringLiteral("å¤§å­¦åŒå­¦"));
+    entry->setName(QStringLiteral("ç¦å…‹çº³"));
+    entry->setIntro(QStringLiteral("è¯—äººçš„å£°éŸ³ä¸åº”è¯¥ä»…ä»…æˆä¸ºäººç±»å†å²çš„è®°å½•ï¼Œæ›´åº”è¯¥æˆä¸ºäººç±»å­˜åœ¨ä¸èƒœåˆ©çš„æ”¯æŸ±å’Œæ ‹æ¢ã€‚"));
     entry->setPhoto(QStringLiteral("checkgmail.png"));
     RosterManager::instance()->addEntry(entry);
 
     entry = new RosterEntry(4);
-    entry->setGroup(QStringLiteral("´óÑ§Í¬Ñ§"));
-    entry->setName(QStringLiteral("ÂÔÈø"));
-    entry->setIntro(QStringLiteral("ËûÈË¼´µØÓü¡£"));
+    entry->setGroup(QStringLiteral("å¤§å­¦åŒå­¦"));
+    entry->setName(QStringLiteral("ç•¥è¨"));
+    entry->setIntro(QStringLiteral("ä»–äººå³åœ°ç‹±ã€‚"));
     entry->setPhoto(QStringLiteral("chromium.png"));
     RosterManager::instance()->addEntry(entry);
 
     entry = new RosterEntry(5);
-    entry->setGroup(QStringLiteral("´óÑ§Í¬Ñ§"));
-    entry->setName(QStringLiteral("Äá²É"));
-    entry->setIntro(QStringLiteral("°×ÖçÖ®¹â£¬ÆñÖªÒ¹É«Ö®Éî¡£"));
+    entry->setGroup(QStringLiteral("å¤§å­¦åŒå­¦"));
+    entry->setName(QStringLiteral("å°¼é‡‡"));
+    entry->setIntro(QStringLiteral("ç™½æ˜¼ä¹‹å…‰ï¼Œå²‚çŸ¥å¤œè‰²ä¹‹æ·±ã€‚"));
     entry->setPhoto(QStringLiteral("facebook.png"));
     RosterManager::instance()->addEntry(entry);
 
     entry = new RosterEntry(6);
-    entry->setGroup(QStringLiteral("´óÑ§Í¬Ñ§"));
-    entry->setName(QStringLiteral("º£µÂ¸ñ¶û"));
-    entry->setIntro(QStringLiteral("ÏòËÀ¶øÉúµÄÒâÒåÊÇ£ºµ±ÄãÎŞÏŞ½Ó½üËÀÍö£¬²ÅÄÜÉîÇĞÌå»áÉúµÄÒâÒå¡£"));
+    entry->setGroup(QStringLiteral("å¤§å­¦åŒå­¦"));
+    entry->setName(QStringLiteral("æµ·å¾·æ ¼å°”"));
+    entry->setIntro(QStringLiteral("å‘æ­»è€Œç”Ÿçš„æ„ä¹‰æ˜¯ï¼šå½“ä½ æ— é™æ¥è¿‘æ­»äº¡ï¼Œæ‰èƒ½æ·±åˆ‡ä½“ä¼šç”Ÿçš„æ„ä¹‰ã€‚"));
     entry->setPhoto(QStringLiteral("goa-account-twitter.png"));
     RosterManager::instance()->addEntry(entry);
 
     entry = new RosterEntry(7);
-    entry->setGroup(QStringLiteral("´óÑ§Í¬Ñ§"));
-    entry->setName(QStringLiteral("Íõ¶ûµÂ"));
-    entry->setIntro(QStringLiteral("ÎÒÃÇ¶¼Éú»îÔÚÒõ¹µÀï£¬µ«ÆäÖĞÒÀÈ»ÓĞÈËÔÚÑöÍûĞÇ¿Õ¡£"));
+    entry->setGroup(QStringLiteral("å¤§å­¦åŒå­¦"));
+    entry->setName(QStringLiteral("ç‹å°”å¾·"));
+    entry->setIntro(QStringLiteral("æˆ‘ä»¬éƒ½ç”Ÿæ´»åœ¨é˜´æ²Ÿé‡Œï¼Œä½†å…¶ä¸­ä¾ç„¶æœ‰äººåœ¨ä»°æœ›æ˜Ÿç©ºã€‚"));
     entry->setPhoto(QStringLiteral("mozilla-firefox.png"));
     RosterManager::instance()->addEntry(entry);
 
     entry = new RosterEntry(8);
-    entry->setGroup(QStringLiteral("´óÑ§Í¬Ñ§"));
-    entry->setName(QStringLiteral("°®ÒòË¹Ì¹"));
-    entry->setIntro(QStringLiteral("Ò»¸öÈËµÄ¼ÛÖµ£¬Ó¦µ±¿´Ëû¹±Ï×Ê²Ã´£¬¶ø²»Ó¦µ±¿´ËûÈ¡µÃÊ²Ã´¡£"));
+    entry->setGroup(QStringLiteral("å¤§å­¦åŒå­¦"));
+    entry->setName(QStringLiteral("çˆ±å› æ–¯å¦"));
+    entry->setIntro(QStringLiteral("ä¸€ä¸ªäººçš„ä»·å€¼ï¼Œåº”å½“çœ‹ä»–è´¡çŒ®ä»€ä¹ˆï¼Œè€Œä¸åº”å½“çœ‹ä»–å–å¾—ä»€ä¹ˆã€‚"));
     entry->setPhoto(QStringLiteral("yahoo.png"));
     RosterManager::instance()->addEntry(entry);
 
     entry = new RosterEntry(9);
-    entry->setGroup(QStringLiteral("´óÑ§Í¬Ñ§"));
-    entry->setName(QStringLiteral("Ê·ÌúÉú"));
-    entry->setIntro(QStringLiteral("ÕæÕıµÄĞÅĞÄÇ°Ãæ£¬ÆäÊµÊÇÒ»Æ¬¿Õ¿õ£¬³ıÁËÏ£ÍûÊ²Ã´Ò²Ã»ÓĞ£¬ÏëÒªÒ²Ã»ÓĞ¡£"));
+    entry->setGroup(QStringLiteral("å¤§å­¦åŒå­¦"));
+    entry->setName(QStringLiteral("å²é“ç”Ÿ"));
+    entry->setIntro(QStringLiteral("çœŸæ­£çš„ä¿¡å¿ƒå‰é¢ï¼Œå…¶å®æ˜¯ä¸€ç‰‡ç©ºæ—·ï¼Œé™¤äº†å¸Œæœ›ä»€ä¹ˆä¹Ÿæ²¡æœ‰ï¼Œæƒ³è¦ä¹Ÿæ²¡æœ‰ã€‚"));
     entry->setPhoto(QStringLiteral("mplayer.png"));
     RosterManager::instance()->addEntry(entry);
 
     entry = new RosterEntry(10);
-    entry->setGroup(QStringLiteral("´óÑ§Í¬Ñ§"));
-    entry->setName(QStringLiteral("ËóÂŞ"));
-    entry->setIntro(QStringLiteral("Ã»ÓĞÄÄÖÖË¼¿¼»ò×öÊÂµÄ·½Ê½£¬ÎŞÂÛËüÊÇ¶àÃ´µÄ¹ÅÀÏ£¬ÖµµÃÎÒÃÇÃ¤Ä¿µØÈ¥¸ú´Ó¡£"));
+    entry->setGroup(QStringLiteral("å¤§å­¦åŒå­¦"));
+    entry->setName(QStringLiteral("æ¢­ç½—"));
+    entry->setIntro(QStringLiteral("æ²¡æœ‰å“ªç§æ€è€ƒæˆ–åšäº‹çš„æ–¹å¼ï¼Œæ— è®ºå®ƒæ˜¯å¤šä¹ˆçš„å¤è€ï¼Œå€¼å¾—æˆ‘ä»¬ç›²ç›®åœ°å»è·Ÿä»ã€‚"));
     entry->setPhoto(QStringLiteral("sun-java.png"));
     RosterManager::instance()->addEntry(entry);
 }

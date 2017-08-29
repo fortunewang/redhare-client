@@ -57,10 +57,10 @@ void RosterEntryWidget::mousePressEvent(QMouseEvent *event)
     if(event->button() == Qt::RightButton)
     {
         QMenu menu(this);
-        menu.addAction(QStringLiteral("É¾³ý"));
-        menu.addAction(QStringLiteral("ÒÆÖÁºÚÃûµ¥"));
-        menu.addAction(QStringLiteral("²é¿´×ÊÁÏ"));
-        menu.addAction(QStringLiteral("ÐÞ¸Ä±¸×¢"));
+        menu.addAction(QStringLiteral("åˆ é™¤"));
+        menu.addAction(QStringLiteral("ç§»è‡³é»‘åå•"));
+        menu.addAction(QStringLiteral("æŸ¥çœ‹èµ„æ–™"));
+        menu.addAction(QStringLiteral("ä¿®æ”¹å¤‡æ³¨"));
         menu.exec(event->globalPos());
     }
 }

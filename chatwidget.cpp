@@ -4,7 +4,7 @@
 #include "rosterentry.h"
 #include "rhconfig.h"
 #include "photo_processing.h"
-#include <Qtimer>
+#include <QTimer>
 
 QHash<quint64, ChatWidget*> ChatWidget::windows_;
 
@@ -84,7 +84,7 @@ void ChatWidget::closeAll()
     QTextCursor cursor = ui->outputEdit->textCursor();
     QTextCharFormat char_format = cursor.charFormat();
 
-    QFont font(QStringLiteral("ËÎÌå"));
+    QFont font(QStringLiteral("å®‹ä½“"));
     font.setPointSize(10);
 
     QString display_name;
@@ -97,7 +97,7 @@ void ChatWidget::closeAll()
     }
     else
     {
-        display_name += QStringLiteral("ÎÒ");
+        display_name += QStringLiteral("æˆ‘");
         char_format.setFont(font);
         char_format.setForeground(QBrush(QColor(0, 51, 113)));
     }
