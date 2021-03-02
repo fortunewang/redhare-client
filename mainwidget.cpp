@@ -72,7 +72,7 @@ void MainWidget::mousePressEvent(QMouseEvent *event)
             break;
         case HITTEST_CLIENT:
             tracking_type_ = TRACKING_MOVE;
-            tracking_point_ = event->globalPos() - this->pos();
+            tracking_point_ = event->globalPosition().toPoint() - this->pos();
             this->grabMouse();
             break;
         default:
@@ -100,7 +100,7 @@ void MainWidget::mouseMoveEvent(QMouseEvent *event)
     switch(tracking_type_)
     {
     case TRACKING_MOVE:
-        this->move(event->globalPos() - tracking_point_);
+        this->move(event->globalPosition().toPoint() - tracking_point_);
         break;
     case TRACKING_RESIZE:
     {
@@ -108,28 +108,28 @@ void MainWidget::mouseMoveEvent(QMouseEvent *event)
         switch(tracking_hittest_)
         {
         case HITTEST_TOP:
-            geo.setTop(event->globalY());
+            geo.setTop(event->globalPosition().y());
             break;
         case HITTEST_TOPLEFT:
-            geo.setTopLeft(event->globalPos());
+            geo.setTopLeft(event->globalPosition().toPoint());
             break;
         case HITTEST_TOPRIGHT:
-            geo.setTopRight(event->globalPos());
+            geo.setTopRight(event->globalPosition().toPoint());
             break;
         case HITTEST_LEFT:
-            geo.setLeft(event->globalX());
+            geo.setLeft(event->globalPosition().x());
             break;
         case HITTEST_BOTTOM:
-            geo.setBottom(event->globalY());
+            geo.setBottom(event->globalPosition().y());
             break;
         case HITTEST_BOTTOMLEFT:
-            geo.setBottomLeft(event->globalPos());
+            geo.setBottomLeft(event->globalPosition().toPoint());
             break;
         case HITTEST_BOTTOMRIGHT:
-            geo.setBottomRight(event->globalPos());
+            geo.setBottomRight(event->globalPosition().toPoint());
             break;
         case HITTEST_RIGHT:
-            geo.setRight(event->globalX());
+            geo.setRight(event->globalPosition().x());
             break;
         default:
             break;
@@ -214,7 +214,7 @@ void MainWidget::paintEvent(QPaintEvent*)
     p.drawRect(rect);
 }
 
-void MainWidget::enterEvent(QEvent*)
+void MainWidget::enterEvent(QEnterEvent*)
 {
     QRect rect = this->geometry();
     if(rect.top() <= 0)

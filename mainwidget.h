@@ -25,7 +25,7 @@ protected:
     virtual void mouseReleaseEvent(QMouseEvent*) Q_DECL_OVERRIDE;
     virtual void mouseMoveEvent(QMouseEvent*) Q_DECL_OVERRIDE;
     virtual void paintEvent(QPaintEvent*) Q_DECL_OVERRIDE;
-    virtual void enterEvent(QEvent*) Q_DECL_OVERRIDE;
+    virtual void enterEvent(QEnterEvent*) Q_DECL_OVERRIDE;
     virtual void leaveEvent(QEvent*) Q_DECL_OVERRIDE;
     virtual void closeEvent(QCloseEvent*) Q_DECL_OVERRIDE;
 

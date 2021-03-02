@@ -9,7 +9,7 @@ class RHScrollBar: public QScrollBar
 public:
     static void hook(QAbstractScrollArea *area);
 protected:
-    virtual void enterEvent(QEvent*) Q_DECL_OVERRIDE;
+    virtual void enterEvent(QEnterEvent*) Q_DECL_OVERRIDE;
     virtual void leaveEvent(QEvent*) Q_DECL_OVERRIDE;
 private:
     RHScrollBar(QWidget *parent);

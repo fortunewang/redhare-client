@@ -11,7 +11,7 @@ void RHScrollBar::hook(QAbstractScrollArea *area)
     area->setVerticalScrollBar(new RHScrollBar(area));
 }
 
-void RHScrollBar::enterEvent(QEvent*)
+void RHScrollBar::enterEvent(QEnterEvent*)
 {
     this->setCursor(Qt::ArrowCursor);
     this->loadStyleSheet(QStringLiteral(":/res/scrollbar_hover.qss"));

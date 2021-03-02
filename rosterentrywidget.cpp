@@ -47,7 +47,7 @@ void RosterEntryWidget::paintEvent(QPaintEvent*)
 {
     QPainter p(this);
     QStyleOption opt;
-    opt.init(this);
+    opt.initFrom(this);
     style()->drawPrimitive(QStyle::PE_Widget, &opt, &p, this);
 }
 
@@ -61,7 +61,7 @@ void RosterEntryWidget::mousePressEvent(QMouseEvent *event)
         menu.addAction(QStringLiteral("移至黑名单"));
         menu.addAction(QStringLiteral("查看资料"));
         menu.addAction(QStringLiteral("修改备注"));
-        menu.exec(event->globalPos());
+        menu.exec(event->globalPosition().toPoint());
     }
 }
 

@@ -25,11 +25,9 @@ void RosterManager::addEntry(RosterEntry *entry)
 
 void RosterManager::removeEntry(quint64 uid)
 {
-    QHash<quint64,RosterEntry*>::iterator it = entries_.find(uid);
-    if(it != entries_.end())
+    RosterEntry *entry = entries_.take(uid);
+    if(entry != nullptr)
     {
-        RosterEntry *entry = it.value();
-        entries_.erase(it);
         emit sigEntryRemoved(entry);
         entry->deleteLater();
     }
@@ -37,12 +35,7 @@ void RosterManager::removeEntry(quint64 uid)
 
 RosterEntry* RosterManager::entry(quint64 uid)
 {
-    QHash<quint64,RosterEntry*>::iterator it = entries_.find(uid);
-    if(it != entries_.end())
-    {
-        return it.value();
-    }
-    return 0;
+    return entries_.value(uid);
 }
 
 QList<RosterEntry*> RosterManager::entries()

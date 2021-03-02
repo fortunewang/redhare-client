@@ -78,7 +78,7 @@ void RosterWidget::paintEvent(QPaintEvent*)
 {
     QPainter p(this);
     QStyleOption opt;
-    opt.init(this);
+    opt.initFrom(this);
     style()->drawPrimitive(QStyle::PE_Widget, &opt, &p, this);
 }
 
@@ -88,6 +88,6 @@ void RosterWidget::mousePressEvent(QMouseEvent *event)
     {
         QMenu menu;
         menu.addAction(QStringLiteral("刷新"));
-        menu.exec(event->globalPos());
+        menu.exec(event->globalPosition().toPoint());
     }
 }

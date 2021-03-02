@@ -10,8 +10,7 @@ CONFIG += precompile_header
 PRECOMPILED_HEADER = stable.h
 
 win32 {
-QMAKE_CXXFLAGS += /source-charset:utf-8
-LIBS += user32.lib
+    LIBS += user32.lib
 }
 
 SOURCES += \

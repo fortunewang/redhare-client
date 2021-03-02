@@ -6,7 +6,7 @@ ScreenShotDialog::ScreenShotDialog(QWidget *parent) :
     is_tracking_(false)
 {
     QDialog::setMouseTracking(true);
-    background_ = QApplication::primaryScreen()->grabWindow(QApplication::desktop()->winId());
+    background_ = QApplication::primaryScreen()->grabWindow(0);
     darker_background_ = background_;
     QPainter(&darker_background_).fillRect(
         QRect(QPoint(0,0), background_.size()),
